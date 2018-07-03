@@ -8,7 +8,7 @@ const hashTable = () => {
       sum += letter.charCodeAt();
     }
 
-    return Math.floor((sum / key.length) % 13);
+    return Math.floor((sum * key.length) % 13);
   };
 
   const put = (key, value) => {
